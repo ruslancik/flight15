@@ -1,0 +1,537 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: Lato, sans-serif;
+  width: auto;
+  height: auto;
+  background-color: #f7f8fc; }
+
+.container {
+  display: grid;
+  grid-template-rows: 60vh repeat(3, min-content);
+  grid-template-columns: repeat(12, 1fr); }
+
+.btn {
+  width: 15.4rem;
+  height: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  opacity: 0.9;
+  font-size: 1.4rem;
+  font-weight: 600;
+  vertical-align: middle; }
+  .btn-white {
+    background-color: #d8e1eb;
+    color: #1a3163; }
+  .btn-yellow {
+    background-color: #fab555;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle; }
+    .btn-yellow i {
+      margin-left: 1rem;
+      vertical-align: middle; }
+  .btn-blue {
+    background-color: #1a3163;
+    color: #ffffff; }
+
+.dot {
+  display: inline-block;
+  content: ' ';
+  width: 6px;
+  height: 6px;
+  background-color: #ced7e0;
+  border-radius: 50%;
+  margin: 0.5rem;
+  vertical-align: middle;
+  opacity: 0.6; }
+
+.dot-sm {
+  display: inline-block;
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #ced7e0;
+  border-radius: 50%;
+  margin: 0.5rem;
+  vertical-align: middle;
+  opacity: 0.6; }
+
+/*
+.circle {
+    content: '';
+    display: inline;
+    width: 24px;
+    height: 24px;
+    background-color: $white;
+    color: $white;
+    border-radius: 50%;
+    padding: 2rem;
+}
+*/
+.arrive {
+  transform: rotate(-180deg); }
+
+.anadolulogo,
+.pgslogo,
+.thylogo {
+  height: 100%;
+  width: auto; }
+
+.selected {
+  transform: scale(1.025);
+  box-shadow: 0 26px 42px 3rem rgba(31, 56, 110, 0.18); }
+
+.header {
+  width: auto;
+  height: 60vh;
+  color: #ffffff;
+  background-image: linear-gradient(102deg, #264380, #1a3163);
+  padding: 2rem 10rem;
+  grid-column: 1 / -1;
+  grid-row: 1 /2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+  .header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1); }
+    .header .navbar__logo {
+      margin: -3rem;
+      padding: 0 3rem;
+      height: auto; }
+    .header .navbar__list-item {
+      line-height: 1.43;
+      font-weight: 600;
+      text-align: center;
+      display: inline;
+      padding: 0 3rem;
+      list-style: none;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.4rem; }
+      .header .navbar__list-item a {
+        color: #ffffff;
+        text-decoration: none; }
+  .header .ticket__steps {
+    margin: 4rem 0; }
+    .header .ticket__steps .horiz {
+      transform: rotate(-90deg);
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      padding: 0.85rem;
+      font-size: 1.6rem;
+      margin-left: -1.2rem; }
+    .header .ticket__steps span {
+      padding: 0 0 0 1rem;
+      font-size: 2.5rem;
+      color: #d8e1eb;
+      opacity: 0.4; }
+    .header .ticket__steps .icon {
+      padding: 1rem 1rem;
+      border: 1px solid #d8e1eb;
+      border-radius: 50%;
+      font-size: 1.6rem; }
+  .header .total {
+    width: 102px;
+    height: 24px;
+    opacity: 0.5;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ffffff;
+    justify-self: end;
+    align-self: end; }
+  .header .flight {
+    letter-spacing: 2px;
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .header .flight .plane {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-left: 0.2rem; }
+    .header .flight span {
+      color: #d8e1eb; }
+  .header .flight {
+    margin-top: 1rem; }
+    .header .flight__info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+    .header .flight__details {
+      height: 30px;
+      width: auto;
+      font-size: 14px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: 1px;
+      color: #ffffff; }
+
+/* Search flight section */
+.search-bar {
+  padding: 0 10rem;
+  background-color: #ffffff;
+  grid-column: 1 / -1; }
+  .search-bar__list {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    backface-visibility: hidden; }
+    .search-bar__list > * {
+      cursor: pointer; }
+    .search-bar__list > *:hover {
+      transform: scale(1.048); }
+  .search-bar__list-items {
+    transition: all .1s;
+    display: inline-block;
+    text-decoration: none;
+    color: #1a3163;
+    opacity: 0.5;
+    width: auto;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    padding-right: 0 2rem; }
+    .search-bar__list-items:last-child a {
+      background-color: #97a6b8;
+      color: #ffffff; }
+
+/*Departure and Attival section*/
+.departure {
+  padding: 0 0 0 10rem;
+  grid-row: 3/4;
+  grid-column: 1 / 7;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr max-content;
+  grid-gap: 1rem 1rem;
+  margin: 0 1rem 0 1rem;
+  /*
+    
+    @media only screen  and (max-width: 992px){
+        grid-column: 1 /-1;
+        grid-row: auto;
+    }
+
+    */
+  /*Departure Title*/
+  /*Departure Date bar*/
+  /*Departure Card*/ }
+  .departure__title {
+    justify-self: start;
+    align-self: center;
+    width: auto;
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #1a3163; }
+    .departure__title i {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 2rem; }
+  .departure__date-bar .date-list {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .departure__date-bar .date-list__item {
+      display: inline-block;
+      list-style: none;
+      color: #1a3163;
+      width: auto;
+      height: 7.2rem;
+      opacity: 0.5;
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1.5;
+      padding: 1rem; }
+    .departure__date-bar .date-list .show {
+      opacity: 1;
+      border-bottom: 2px solid #fab95b; }
+    .departure__date-bar .date-list .date {
+      display: block; }
+    .departure__date-bar .date-list .price {
+      display: block;
+      opacity: 0.25;
+      font-size: 1.4rem; }
+    .departure__date-bar .date-list .date-scroll__left {
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      display: inline-block;
+      width: 4rem;
+      background-color: #e6edf5;
+      font-size: 2rem;
+      text-align: center;
+      vertical-align: baseline;
+      padding: 3rem 0; }
+    .departure__date-bar .date-list .date-scroll__right {
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      display: inline-block;
+      width: 4rem;
+      background-color: #e6edf5;
+      font-size: 2rem;
+      text-align: center;
+      vertical-align: baseline;
+      padding: 3rem 0; }
+  .departure__card {
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 16px 32px 0 rgba(31, 56, 110, 0.18);
+    /*.
+        card-scroll {
+            position: absolute;
+
+        }
+        */ }
+    .departure__card-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      padding: 2rem;
+      border-bottom: 2px dotted #e6edf5;
+      background-color: #ffffff;
+      /* background-image:
+            radial-gradient(circle at 100% 100%, $pale-grey 15px, $white 15px),
+            radial-gradient(circle at 0 100%, $pale-grey 15px, $white 15px);*/ }
+      .departure__card-top-text {
+        padding: 0.5rem; }
+        .departure__card-top-text .text {
+          font-size: 2rem;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: normal;
+          color: #1a3163;
+          padding-right: 2rem;
+          text-align: center;
+          vertical-align: middle; }
+    .departure__card-bottom {
+      background-color: #ffffff;
+      padding: 2rem 0 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      /* background-image:
+            radial-gradient(circle at 0 0, $pale-grey 15px, $white 15px),
+            radial-gradient(circle at 100% 0, $pale-grey 15px, $white 15px);*/ }
+      .departure__card-bottom .bottom-card__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .departure__card-bottom .bottom-card__list-item {
+          padding: 0.5rem 1rem;
+          font-size: 1.4rem;
+          font-weight: 600;
+          opacity: 0.5;
+          color: #1a3163;
+          display: inline-block;
+          list-style: none;
+          text-align: center; }
+      .departure__card-bottom .bottom-card__list2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .departure__card-bottom .bottom-card__list2 .font-sm {
+          font-size: 1.6rem;
+          font-weight: 600; }
+        .departure__card-bottom .bottom-card__list2-item {
+          padding: 0.5rem 1rem;
+          display: inline-block;
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: #1a3163; }
+
+.arrival {
+  padding: 0  10rem 0 0;
+  grid-row: 3/4;
+  grid-column: 7/13;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  grid-gap: 1rem 1rem;
+  margin: 0 1rem 0 1rem;
+  /*Arrival Title*/
+  /*Arrival date bar*/
+  /*Departure Card*/ }
+  .arrival__title {
+    padding-left: 1rem;
+    justify-self: start;
+    align-self: center;
+    width: auto;
+    height: 3.6rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #1a3163;
+    vertical-align: middle; }
+    .arrival__title i {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 2rem; }
+  .arrival__date-bar {
+    margin-left: 0 1rem; }
+    .arrival__date-bar .date-list {
+      background-color: #ffffff;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .arrival__date-bar .date-list__item {
+        display: inline-block;
+        list-style: none;
+        color: #1a3163;
+        width: auto;
+        height: 7.2rem;
+        opacity: 0.5;
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 1.5;
+        padding: 1rem; }
+      .arrival__date-bar .date-list .show {
+        opacity: 1;
+        border-bottom: 2px solid #fab95b; }
+      .arrival__date-bar .date-list .date {
+        display: block; }
+      .arrival__date-bar .date-list .price {
+        display: block;
+        opacity: 0.25;
+        font-size: 1.4rem; }
+      .arrival__date-bar .date-list .date-scroll__left {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        display: inline-block;
+        width: 4rem;
+        background-color: #e6edf5;
+        font-size: 2rem;
+        text-align: center;
+        vertical-align: baseline;
+        padding: 3rem 0; }
+      .arrival__date-bar .date-list .date-scroll__right {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        display: inline-block;
+        width: 4rem;
+        background-color: #e6edf5;
+        font-size: 2rem;
+        text-align: center;
+        vertical-align: baseline;
+        padding: 3rem 0; }
+  .arrival__card {
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 16px 32px 0 rgba(31, 56, 110, 0.18);
+    /*.
+        card-scroll {
+            position: absolute;
+
+        }
+        */ }
+    .arrival__card-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      padding: 2rem;
+      border-bottom: 2px dotted #e6edf5;
+      background-color: #ffffff;
+      /* background-image:
+            radial-gradient(circle at 100% 100%, $pale-grey 15px, $white 15px),
+            radial-gradient(circle at 0 100%, $pale-grey 15px, $white 15px);*/ }
+      .arrival__card-top-text {
+        padding: 0.5rem; }
+        .arrival__card-top-text .text {
+          font-size: 2rem;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: normal;
+          color: #1a3163;
+          padding-right: 2rem;
+          text-align: center;
+          vertical-align: middle; }
+    .arrival__card-bottom {
+      background-color: #ffffff;
+      padding: 2rem 0 2rem 0;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      /* background-image:
+            radial-gradient(circle at 0 0, $pale-grey 15px, $white 15px),
+            radial-gradient(circle at 100% 0, $pale-grey 15px, $white 15px);*/ }
+      .arrival__card-bottom .bottom-card__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .arrival__card-bottom .bottom-card__list-item {
+          padding: 0.5rem 1rem;
+          font-size: 1.4rem;
+          font-weight: 600;
+          opacity: 0.5;
+          color: #1a3163;
+          display: inline-block;
+          list-style: none;
+          text-align: center; }
+      .arrival__card-bottom .bottom-card__list2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .arrival__card-bottom .bottom-card__list2 .font-sm {
+          font-size: 1.6rem;
+          font-weight: 600; }
+        .arrival__card-bottom .bottom-card__list2-item {
+          padding: 0.5rem 1rem;
+          display: inline-block;
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: #1a3163; }
+
+.footer {
+  background-color: grey;
+  height: 300px;
+  grid-column: 1 / -1; }

@@ -1,0 +1,20 @@
+
+$white: #ffffff;
+$black: #000000;
+$cloudy-blue: #ced7e0;
+$butterscotch: #fab555;
+$butterscotch-two: #fab95b;
+$pale-grey: #e6edf5;
+$pale-grey-two: #f7f8fc;
+$blue-grey: #97a6b8;
+$dark-slate-blue: #1a3163;
+$light-blue-grey: #d8e1eb;
+$light-royal-blue: #3b44ff;
+$reddish-pink: #ff2b5d;
+
+$font-primary : Lato, sans-serif;
+
+
+@import 'base';
+@import 'component';
+@import 'layout';

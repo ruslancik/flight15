@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px    10/16px = 62.5%
+}
+
+body {
+    font-family: $font-primary;
+    width: auto;
+    height: auto;
+    background-color: $pale-grey-two;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60vh repeat(3, min-content);
+    grid-template-columns: repeat(12, 1fr);
+}

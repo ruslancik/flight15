@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://kit.fontawesome.com/17b48e235f.js"></script>
+<link rel="stylesheet" href="css/main.css">
+<title>Atölye15 | Flight</title>
+</head>
+<body>
+
+<div class="container">
+
+
+
+<header class="header">
+<!-- NavBar -->
+<div class="navbar">
+
+<img src="img/logo-trans.png" alt="Atölye15 logo" class="navbar__logo">
+
+<ul class="navbar__list">
+    <li class="navbar__list-item"><a href="#">Ana sayfa</a></li>
+    <li class="navbar__list-item"><a href="#">Kampanyalar</a></li>
+    <li class="navbar__list-item"><a href="#">Bilet İşlemleri</a></li>
+    <li class="navbar__list-item"><a href="#">Yardım</a></li>
+    <li class="navbar__list-item"><i class="fas fa-search"></i></li>
+</ul>
+
+
+</div>
+
+<!-- Ticket and Flight information -->
+
+<div class="ticket__steps">
+
+<a href="#" class="btn btn-white"><i class="fas fa-plane horiz"></i> Uçuş seçimi </a>
+
+<span> <i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-user-alt icon"></i> <i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-suitcase-rolling icon"></i><i class="dot-sm"></i><i class="dot-sm"></i> <i class="fas fa-credit-card icon"></i></span>
+
+</div>
+
+<div class="total"> <span>Toplam tutar</span> </div>
+<div class="flight">
+<h1 class="flight__from-to">Ankara (ESB) 
+<span clas><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane plane"></i><i class="dot-sm"></i><i class="dot-sm"></i> </span>
+İzmir (ADB)  
+</h1>
+<h1 class="flight__price">269.99 TL</h1>
+
+
+</div>
+<div class="flight__info">
+<div class="flight__details">
+    <span> <i class="dot"></i> 27 Eyl,Pzr - 08 Eki,Pts <i class="dot"></i> 1 Yetişkin <i class="dot"></i> Gidiş-Dönüş </span>
+</div>
+<a href="#" class="btn btn-yellow">Devam et <i class="fas fa-angle-right"></i></a>
+</div>
+
+
+</header>
+
+<div class="search-bar">
+<ul class="search-bar__list">
+<li class="search-bar__list-items"> <i class="fas fa-plane-departure"> Nerden ?</i></li>
+<li class="search-bar__list-items"> <i class="fas fa-plane-arrival"> Nereye ?</i></li>
+<li class="search-bar__list-items"> <i class="fas fa-list-alt"> Gidiş / Dönüş tarihi seç</i></li>
+<li class="search-bar__list-items"> <i class="fas fa-user-alt"> Yolcu seç</i></li>
+<li class="search-bar__list-items"> <a href="#" class="btn btn-white"> Yeniden ara <i class="fas fa-search"></i></a></li>
+</ul>
+</div>
+
+
+
+<!---Departure -->
+<div class="departure">
+<div class="departure__title">
+        <span><i class="fas fa-plane"></i>Gidiş Uçuşları</span>
+</div>
+
+<div class="departure__date-bar">
+    <ul class="date-list">
+            <div class="date-scroll__left"><i class="fas fa-angle-left"></i></div>    
+            <li class="date-list__item"><p><span class="date">26 Eyl,Cts</span><span class="price">149,99 TL</span></p></li>
+            <li class="date-list__item show"><p><span class="date" >27 Eyl,Pzr</span><span class="price">249,99 TL</span></p></li>
+            <li class="date-list__item"><p><span class="date">28 Eyl,Pts</span><span class="price">169,99 TL</span></p></li>
+            <div class="date-scroll__right"><i class="fas fa-angle-right"></i></div>    
+        </ul>
+
+</div>
+
+<div class="departure__card">
+
+    <div class="departure__card-top">
+        <img src="img/pegasus.png" alt="Pegasus" class="pgslogo">
+
+        <div class="departure__card-top-text">
+            <span class="text">269,99 TL</span>
+            <a href="#" class="btn btn-yellow">Bileti seç</a>
+        </div>
+
+    </div>
+
+    <div class="departure__card-bottom">
+        <ul class="bottom-card__list">
+            <li class="bottom-card__list-item">HTY</li>
+            <li class="bottom-card__list-item"><span></span></li>
+            <li class="bottom-card__list-item"><span></span></li>
+            <li class="bottom-card__list-item">ADB</li>
+            <li class="bottom-card__list-item">Süre</li>
+            <li class="bottom-card__list-item">Transfer</li>
+            <li class="bottom-card__list-item"><span></span></li>
+        </ul>
+        <ul class="bottom-card__list2">
+            <li class="bottom-card__list2-item">07:05</li>
+            <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+            <li class="bottom-card__list2-item">08:25</li>
+            <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+            <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+            <li class="bottom-card__list2-item"><span></span></li>
+        </ul>
+        <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+    </div>
+
+
+    </div>
+    <div class="departure__card selected">
+
+        <div class="departure__card-top">
+            <img src="img/thy.png" alt="THY" class="thylogo">
+
+            <div class="departure__card-top-text">
+                <span class="text">269,99 TL</span>
+                <a href="#" class="btn btn-blue">Bilet seçildi</a>
+            </div>
+
+        </div>
+
+        <div class="departure__card-bottom">
+            <ul class="bottom-card__list">
+                <li class="bottom-card__list-item">HTY</li>
+                <li class="bottom-card__list-item"><span></span></li>
+                <li class="bottom-card__list-item"><span></span></li>
+                <li class="bottom-card__list-item">ADB</li>
+                <li class="bottom-card__list-item">Süre</li>
+                <li class="bottom-card__list-item">Transfer</li>
+                <li class="bottom-card__list-item"><span></span></li>
+            </ul>
+            <ul class="bottom-card__list2">
+                <li class="bottom-card__list2-item">07:05</li>
+                <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+                <li class="bottom-card__list2-item">08:25</li>
+                <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+                <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+                <li class="bottom-card__list2-item"><span></span></li>
+            </ul>
+            <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+        </div>
+
+
+        </div>
+        <div class="departure__card">
+
+            <div class="departure__card-top">
+                <img src="img/anadolu.png" alt="Anadolu" class="anadolulogo">
+
+                <div class="departure__card-top-text">
+                    <span class="text">269,99 TL</span>
+                    <a href="#" class="btn btn-yellow">Bileti seç</a>
+                </div>
+
+            </div>
+
+            <div class="departure__card-bottom">
+                <ul class="bottom-card__list">
+                    <li class="bottom-card__list-item">HTY</li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                    <li class="bottom-card__list-item">ADB</li>
+                    <li class="bottom-card__list-item">Süre</li>
+                    <li class="bottom-card__list-item">Transfer</li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                </ul>
+                <ul class="bottom-card__list2">
+                    <li class="bottom-card__list2-item">07:05</li>
+                    <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+                    <li class="bottom-card__list2-item">08:25</li>
+                    <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+                    <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+                    <li class="bottom-card__list2-item"><span></span></li>
+                </ul>
+                <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+            </div>
+
+
+            </div>
+
+            <div class="departure__card">
+
+                <div class="departure__card-top">
+                    <img src="img/thy.png" alt="THY" class="thylogo">
+
+                    <div class="departure__card-top-text">
+                        <span class="text">269,99 TL</span>
+                        <a href="#" class="btn btn-yellow">Bileti seç</a>
+                    </div>
+
+                </div>
+
+                <div class="departure__card-bottom">
+                    <ul class="bottom-card__list">
+                        <li class="bottom-card__list-item">HTY</li>
+                        <li class="bottom-card__list-item"><span></span></li>
+                        <li class="bottom-card__list-item"><span></span></li>
+                        <li class="bottom-card__list-item">ADB</li>
+                        <li class="bottom-card__list-item">Süre</li>
+                        <li class="bottom-card__list-item">Transfer</li>
+                        <li class="bottom-card__list-item"><span></span></li>
+                    </ul>
+                    <ul class="bottom-card__list2">
+                        <li class="bottom-card__list2-item">07:05</li>
+                        <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+                        <li class="bottom-card__list2-item">08:25</li>
+                        <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+                        <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+                        <li class="bottom-card__list2-item"><span></span></li>
+                    </ul>
+                    <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+                </div>
+
+
+                </div>
+
+                <div class="departure__card">
+
+    <div class="departure__card-top">
+        <img src="img/pegasus.png" alt="Pegasus" class="pgslogo">
+
+        <div class="departure__card-top-text">
+            <span class="text">269,99 TL</span>
+            <a href="#" class="btn btn-yellow">Bileti seç</a>
+        </div>
+
+    </div>
+
+    <div class="departure__card-bottom">
+        <ul class="bottom-card__list">
+            <li class="bottom-card__list-item">HTY</li>
+            <li class="bottom-card__list-item"><span></span></li>
+            <li class="bottom-card__list-item"><span></span></li>
+            <li class="bottom-card__list-item">ADB</li>
+            <li class="bottom-card__list-item">Süre</li>
+            <li class="bottom-card__list-item">Transfer</li>
+            <li class="bottom-card__list-item"><span></span></li>
+        </ul>
+        <ul class="bottom-card__list2">
+            <li class="bottom-card__list2-item">07:05</li>
+            <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+            <li class="bottom-card__list2-item">08:25</li>
+            <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+            <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+            <li class="bottom-card__list2-item"><span></span></li>
+        </ul>
+        <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+    </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+<!---Arrival -->
+<div class="arrival">
+<div class="arrival__title">
+    <span><i class="fas fa-plane arrive"></i>Dönüş Uçuşları</span>
+</div>
+
+<div class="arrival__date-bar">
+    <ul class="date-list">
+            <div class="date-scroll__left"><i class="fas fa-angle-left"></i></div>    
+            <li class="date-list__item"><p><span class="date">07 Eki,Cts</span><span class="price">149,99 TL</span></p></li>
+            <li class="date-list__item show"><p><span class="date" >08 Eki,Pzr</span><span class="price">249,99 TL</span></p></li>
+            <li class="date-list__item"><p><span class="date">09 Eki,Pts</span><span class="price">169,99 TL</span></p></li>
+            <div class="date-scroll__right"><i class="fas fa-angle-right"></i></div>    
+    </ul>
+</div>
+
+<div class="arrival__card">
+
+        <div class="arrival__card-top">
+                <img src="img/thy.png" alt="THY" class="thylogo">
+
+                <div class="arrival__card-top-text">
+                    <span class="text">269,99 TL</span>
+                    <a href="#" class="btn btn-yellow">Bileti seç</a>
+                </div>
+
+            </div>
+
+            <div class="arrival__card-bottom">
+                <ul class="bottom-card__list">
+                    <li class="bottom-card__list-item">HTY</li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                    <li class="bottom-card__list-item">ADB</li>
+                    <li class="bottom-card__list-item">Süre</li>
+                    <li class="bottom-card__list-item">Transfer</li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                </ul>
+                <ul class="bottom-card__list2">
+                    <li class="bottom-card__list2-item">07:05</li>
+                    <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane arrive"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+                    <li class="bottom-card__list2-item">08:25</li>
+                    <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+                    <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+                    <li class="bottom-card__list2-item"><span></span></li>
+                </ul>
+                <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+            </div>
+
+    </div>
+<div class="arrival__card">
+
+<div class="arrival__card-top">
+    <img src="img/pegasus.png" alt="Pegasus" class="pgslogo">
+
+    <div class="arrival__card-top-text">
+        <span class="text">269,99 TL</span>
+        <a href="#" class="btn btn-yellow">Bileti seç</a>
+    </div>
+
+</div>
+
+<div class="arrival__card-bottom">
+    <ul class="bottom-card__list">
+        <li class="bottom-card__list-item">HTY</li>
+        <li class="bottom-card__list-item"><span></span></li>
+        <li class="bottom-card__list-item"><span></span></li>
+        <li class="bottom-card__list-item">ADB</li>
+        <li class="bottom-card__list-item">Süre</li>
+        <li class="bottom-card__list-item">Transfer</li>
+        <li class="bottom-card__list-item"><span></span></li>
+    </ul>
+    <ul class="bottom-card__list2">
+        <li class="bottom-card__list2-item">07:05</li>
+        <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane arrive"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+        <li class="bottom-card__list2-item">08:25</li>
+        <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+        <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+        <li class="bottom-card__list2-item"><span></span></li>
+    </ul>
+    <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+</div>
+
+</div>
+<div class="arrival__card">
+
+<div class="arrival__card-top">
+        <img src="img/thy.png" alt="THY" class="thylogo">
+
+        <div class="arrival__card-top-text">
+            <span class="text">269,99 TL</span>
+            <a href="#" class="btn btn-yellow">Bileti seç</a>
+        </div>
+
+    </div>
+
+    <div class="arrival__card-bottom">
+        <ul class="bottom-card__list">
+            <li class="bottom-card__list-item">HTY</li>
+            <li class="bottom-card__list-item"><span></span></li>
+            <li class="bottom-card__list-item"><span></span></li>
+            <li class="bottom-card__list-item">ADB</li>
+            <li class="bottom-card__list-item">Süre</li>
+            <li class="bottom-card__list-item">Transfer</li>
+            <li class="bottom-card__list-item"><span></span></li>
+        </ul>
+        <ul class="bottom-card__list2">
+            <li class="bottom-card__list2-item">07:05</li>
+            <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane arrive"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+            <li class="bottom-card__list2-item">08:25</li>
+            <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+            <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+            <li class="bottom-card__list2-item"><span></span></li>
+        </ul>
+        <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+    </div>
+
+</div>
+<div class="arrival__card">
+
+    <div class="arrival__card-top">
+            <img src="img/thy.png" alt="THY" class="thylogo">
+
+            <div class="arrival__card-top-text">
+                <span class="text">269,99 TL</span>
+                <a href="#" class="btn btn-yellow">Bileti seç</a>
+            </div>
+
+        </div>
+
+        <div class="arrival__card-bottom">
+            <ul class="bottom-card__list">
+                <li class="bottom-card__list-item">HTY</li>
+                <li class="bottom-card__list-item"><span></span></li>
+                <li class="bottom-card__list-item"><span></span></li>
+                <li class="bottom-card__list-item">ADB</li>
+                <li class="bottom-card__list-item">Süre</li>
+                <li class="bottom-card__list-item">Transfer</li>
+                <li class="bottom-card__list-item"><span></span></li>
+            </ul>
+            <ul class="bottom-card__list2">
+                <li class="bottom-card__list2-item">07:05</li>
+                <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane arrive"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+                <li class="bottom-card__list2-item">08:25</li>
+                <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+                <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+                <li class="bottom-card__list2-item"><span></span></li>
+            </ul>
+            <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+        </div>
+
+</div>
+<div class="arrival__card">
+
+        <div class="arrival__card-top">
+                <img src="img/anadolu.png" alt="Anadolu" class="anadolulogo">
+
+                <div class="arrival__card-top-text">
+                    <span class="text">269,99 TL</span>
+                    <a href="#" class="btn btn-yellow">Bileti seç</a>
+                </div>
+
+            </div>
+
+            <div class="arrival__card-bottom">
+                <ul class="bottom-card__list">
+                    <li class="bottom-card__list-item">HTY</li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                    <li class="bottom-card__list-item">ADB</li>
+                    <li class="bottom-card__list-item">Süre</li>
+                    <li class="bottom-card__list-item">Transfer</li>
+                    <li class="bottom-card__list-item"><span></span></li>
+                </ul>
+                <ul class="bottom-card__list2">
+                    <li class="bottom-card__list2-item">07:05</li>
+                    <li class="bottom-card__list2-item font-sm"><span><i class="dot-sm"></i><i class="dot-sm"></i><i class="fas fa-plane arrive"></i><i class="dot-sm"></i><i class="dot-sm"></i></span></li>
+                    <li class="bottom-card__list2-item">08:25</li>
+                    <li class="bottom-card__list2-item font-sm">1s, 20dk</li>
+                    <li class="bottom-card__list2-item font-sm">Aktarmasız</li>
+                    <li class="bottom-card__list2-item"><span></span></li>
+                </ul>
+                <!--<div class="card-scroll"><i class="fas fa-angle-right"></i></div>-->    
+            </div>
+
+    </div>
+
+</div>
+
+
+
+<footer class="footer">
+
+</footer>
+
+
+
+
+
+
+</div>
+</body>
+</html>
