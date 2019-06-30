@@ -55,6 +55,12 @@ Mixins
     line-height: 1.43;
     letter-spacing: normal;
     color: $dark-slate-blue;
+
+    @include respond(phone){
+                
+        font-size: 1.6rem;
+
+    }
 }
 
 @mixin title {
@@ -67,6 +73,10 @@ Mixins
     letter-spacing: normal;
     color: $dark-slate-blue;
     padding: 0 0 2rem 0;
+    @include respond(phone){
+                
+        font-size: 1.8rem;
+    }
 }
 
 @mixin absCenter {

@@ -17,6 +17,7 @@
     }
 
     
+    
 
     .navbar {
         
@@ -37,6 +38,10 @@
             margin: -3rem;
             padding: 0 3rem;
             height: auto;
+
+            @include respond (phone){
+                margin: 4.5rem 0;
+            }
         }
 
         &__list-item {
@@ -232,7 +237,9 @@
              backface-visibility: hidden;
              
              @include respond(phone){
-                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;  
+            
             }
              
 
@@ -263,11 +270,16 @@
             letter-spacing: normal;
             padding-right: 0 2rem;
 
+            @include respond(phone){
+                padding: 2rem 4rem;
+                font-size: 2rem;
+            }
                         
             
             &:last-child a {
                 background-color: $blue-grey;
                 color: $white;
+                
                 
             }
 
@@ -715,8 +727,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+
+    @include respond(phone){
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
     
     &-logo {
+        
+        @include respond(phone){
+            grid-column: 1 / -1;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 1rem 0;
+        }
 
         &__img {
             padding : 0 0 2rem 0;
@@ -732,10 +759,20 @@
             line-height: 1.43;
             letter-spacing: normal;
             color: $dark-slate-blue;
+            @include respond(phone){
+                
+                font-size: 2rem;
+            }
         }
     }
 
     &-pro {
+
+        @include respond(phone){
+            grid-column: 1 / -1;
+            grid-row: 2/3;
+            justify-self: start;
+        }
 
         &__title {
             @include title;
@@ -748,6 +785,7 @@
                 padding: 1rem 0;
 
                 a {
+                    
                     @include list;
                 }
             }
@@ -756,6 +794,12 @@
     }
 
     &-about {
+
+        @include respond(phone){
+            grid-column: 1 / -1;
+            grid-row: 2/3;
+            justify-self: center;
+        }
 
         &__title {
             @include title;
@@ -776,6 +820,12 @@
     }
 
     &-support {
+
+        @include respond(phone){
+            grid-column: 1 / -1;
+            grid-row: 2/3;
+            justify-self: end;
+        }
 
         &__title {
             @include title;

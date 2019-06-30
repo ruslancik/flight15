@@ -149,7 +149,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 45%; } }
+      font-size: 37.5%; } }
 
 body {
   font-family: Lato, sans-serif;
@@ -172,6 +172,9 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   vertical-align: middle; }
+  @media (max-width: 37.5em) {
+    .btn {
+      font-size: 1.6rem; } }
   .btn-white {
     background-color: #d8e1eb;
     color: #1a3163; }
@@ -266,6 +269,9 @@ body {
       margin: -3rem;
       padding: 0 3rem;
       height: auto; }
+      @media (max-width: 37.5em) {
+        .header .navbar__logo {
+          margin: 4.5rem 0; } }
     .header .navbar__list-item {
       line-height: 1.43;
       font-weight: 600;
@@ -405,7 +411,8 @@ body {
     backface-visibility: hidden; }
     @media (max-width: 37.5em) {
       .search-bar__list {
-        flex-wrap: wrap; } }
+        flex-direction: column;
+        align-items: center; } }
     .search-bar__list > * {
       cursor: pointer; }
     .search-bar__list > *:hover {
@@ -425,6 +432,10 @@ body {
     line-height: 1.43;
     letter-spacing: normal;
     padding-right: 0 2rem; }
+    @media (max-width: 37.5em) {
+      .search-bar__list-items {
+        padding: 2rem 4rem;
+        font-size: 2rem; } }
     .search-bar__list-items:last-child a {
       background-color: #97a6b8;
       color: #ffffff; }
@@ -762,6 +773,19 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto; }
+  @media (max-width: 37.5em) {
+    .footer {
+      grid-template-rows: 1fr 1fr;
+      justify-items: center; } }
+  @media (max-width: 37.5em) {
+    .footer-logo {
+      grid-column: 1 / -1;
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0 1rem 0; } }
   .footer-logo__img {
     padding: 0 0 2rem 0; }
   .footer-logo__text {
@@ -774,6 +798,14 @@ body {
     line-height: 1.43;
     letter-spacing: normal;
     color: #1a3163; }
+    @media (max-width: 37.5em) {
+      .footer-logo__text {
+        font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    .footer-pro {
+      grid-column: 1 / -1;
+      grid-row: 2/3;
+      justify-self: start; } }
   .footer-pro__title {
     font-family: Lato, sans-serif;
     font-size: 1.6rem;
@@ -784,6 +816,9 @@ body {
     letter-spacing: normal;
     color: #1a3163;
     padding: 0 0 2rem 0; }
+    @media (max-width: 37.5em) {
+      .footer-pro__title {
+        font-size: 1.8rem; } }
   .footer-pro__list__item {
     list-style: none;
     padding: 1rem 0; }
@@ -798,6 +833,14 @@ body {
       line-height: 1.43;
       letter-spacing: normal;
       color: #1a3163; }
+      @media (max-width: 37.5em) {
+        .footer-pro__list__item a {
+          font-size: 1.6rem; } }
+  @media (max-width: 37.5em) {
+    .footer-about {
+      grid-column: 1 / -1;
+      grid-row: 2/3;
+      justify-self: center; } }
   .footer-about__title {
     font-family: Lato, sans-serif;
     font-size: 1.6rem;
@@ -808,6 +851,9 @@ body {
     letter-spacing: normal;
     color: #1a3163;
     padding: 0 0 2rem 0; }
+    @media (max-width: 37.5em) {
+      .footer-about__title {
+        font-size: 1.8rem; } }
   .footer-about__list__item {
     list-style: none;
     padding: 1rem 0; }
@@ -822,6 +868,14 @@ body {
       line-height: 1.43;
       letter-spacing: normal;
       color: #1a3163; }
+      @media (max-width: 37.5em) {
+        .footer-about__list__item a {
+          font-size: 1.6rem; } }
+  @media (max-width: 37.5em) {
+    .footer-support {
+      grid-column: 1 / -1;
+      grid-row: 2/3;
+      justify-self: end; } }
   .footer-support__title {
     font-family: Lato, sans-serif;
     font-size: 1.6rem;
@@ -832,6 +886,9 @@ body {
     letter-spacing: normal;
     color: #1a3163;
     padding: 0 0 2rem 0; }
+    @media (max-width: 37.5em) {
+      .footer-support__title {
+        font-size: 1.8rem; } }
   .footer-support__list__item {
     list-style: none;
     padding: 1rem 0; }
@@ -846,3 +903,6 @@ body {
       line-height: 1.43;
       letter-spacing: normal;
       color: #1a3163; }
+      @media (max-width: 37.5em) {
+        .footer-support__list__item a {
+          font-size: 1.6rem; } }

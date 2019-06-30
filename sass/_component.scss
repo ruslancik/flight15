@@ -9,6 +9,10 @@
     font-weight: 600;
     vertical-align: middle;
 
+    @include respond(phone){
+        font-size: 1.6rem;
+    }
+
     &-white {
         background-color: $light-blue-grey;
         color: $dark-slate-blue;

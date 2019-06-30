@@ -23,7 +23,7 @@ html {
       }
     
       @include respond(phone){
-        font-size: 45%;   // 1rem = 6px  6/16=37.5
+        font-size: 37.5%;   // 1rem = 6px  6/16=37.5
       }
 }
 
@@ -39,4 +39,6 @@ body {
     display: grid;
     grid-template-rows: 60vh repeat(3, min-content);
     grid-template-columns: repeat(12, 1fr);
+
+    
 }
