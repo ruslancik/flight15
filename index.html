@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <script src="https://kit.fontawesome.com/17b48e235f.js"></script>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/minify/main.css">
 <title>Atölye15 | Flight</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 <div class="container">
   
 
-<header class="header">
+<header class="header" id="header">
     
 
     
@@ -31,19 +31,19 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="" class="navigation__link">ANA SAYFA</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">KAMPANYALAR</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">BİLET İŞLEMLERİ</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">YARDIM</a></li>
+                <li class="navigation__item"><a href="#header" class="navigation__link">ANA SAYFA</a></li>
+                <li class="navigation__item"><a href="#ticket" class="navigation__link">KAMPANYALAR</a></li>
+                <li class="navigation__item"><a href="#ticket" class="navigation__link">BİLET İŞLEMLERİ</a></li>
+                <li class="navigation__item"><a href="#help" class="navigation__link">YARDIM</a></li>
             </ul>
         </nav>
     </div>
 
 <ul class="navbar__list">
-    <li class="navbar__list-item"><a href="#">Ana sayfa</a></li>
-    <li class="navbar__list-item"><a href="#">Kampanyalar</a></li>
-    <li class="navbar__list-item"><a href="#">Bilet İşlemleri</a></li>
-    <li class="navbar__list-item"><a href="#">Yardım</a></li>
+    <li class="navbar__list-item"><a href="#header">Ana sayfa</a></li>
+    <li class="navbar__list-item"><a href="#ticket">Kampanyalar</a></li>
+    <li class="navbar__list-item"><a href="#ticket">Bilet İşlemleri</a></li>
+    <li class="navbar__list-item"><a href="#help">Yardım</a></li>
     <li class="navbar__list-item"><i class="fas fa-search"></i></li>
 </ul>
 
@@ -95,7 +95,7 @@
 
 
 <!---Departure -->
-<div class="departure">
+<div class="departure" id="ticket">
 <div class="departure__title">
         <span><i class="fas fa-plane"></i>Gidiş Uçuşları</span>
 </div>
@@ -296,7 +296,7 @@
 
 
 <!---Arrival -->
-<div class="arrival">
+<div class="arrival" id="ticket">
 <div class="arrival__title">
     <span><i class="fas fa-plane arrive"></i>Dönüş Uçuşları</span>
 </div>
@@ -486,7 +486,7 @@
 
 
 <!-- Footer-->
-<footer class="footer">
+<footer class="footer" id="help">
     <div class="footer-logo">
         <img src="img/logo.png" alt="Footer Logo" class="footer-logo__img">
         <p class="footer-logo__text">Copyright &copy; Atolye15</p>
@@ -525,5 +525,7 @@
 
 
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="js/moveto.js"></script>   
     </body>
 </html>
