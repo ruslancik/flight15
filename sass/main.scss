@@ -1,3 +1,46 @@
+// MEDİA QUERY MANAGER 
+
+/*
+0-600px     : Phone
+
+600-900px   : Tablet portrait
+
+900-1200px  : Tablet landscape
+
+(1200-1800) :   is where our normal style applied
+
+1800+       : Big desktop
+
+
+--- $breakpoint argument choise
+
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+
+1em = 16px
+
+*/
+
+@mixin respond ($breakpoint) {
+
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content };       // 600px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content };     // 900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content };        // 1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content };    // 1800px
+    }
+
+}
+
 /*
 Mixins
 */
@@ -5,7 +48,7 @@ Mixins
     text-decoration: none;
     opacity: 0.5;
     font-family: $font-primary;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -16,7 +59,7 @@ Mixins
 
 @mixin title {
     font-family: $font-primary;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
@@ -26,6 +69,12 @@ Mixins
     padding: 0 0 2rem 0;
 }
 
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*
 Variables
 */
@@ -44,7 +93,7 @@ $reddish-pink: #ff2b5d;
 
 $font-primary : Lato, sans-serif;
 
-
+@import 'navigation';
 @import 'base';
 @import 'component';
 @import 'layout';

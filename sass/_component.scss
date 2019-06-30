@@ -36,8 +36,8 @@
 .dot {
     display: inline-block;
     content: ' ';
-    width: 6px;
-    height: 6px;
+    width: 0.6rem;
+    height: 0.6rem;
     background-color: $cloudy-blue;
     border-radius: 50%;
     margin: 0.5rem;
@@ -49,8 +49,8 @@
 .dot-sm {
     display: inline-block;
     content: '';
-    width: 4px;
-    height: 4px;
+    width: 0.4rem;
+    height: 0.4rem;
     background-color: $cloudy-blue;
     border-radius: 50%;
     margin: 0.5rem;
@@ -84,7 +84,7 @@
 
 .selected {
     transform: scale(1.025);
-    box-shadow: 0 26px 42px 3rem rgba(31, 56, 110, 0.18);
+    box-shadow: 0 2.6rem 4.2rem 3rem rgba(31, 56, 110, 0.18);
 }
 
 

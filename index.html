@@ -11,14 +11,33 @@
 <body>
 
 <div class="container">
-
-
+  
 
 <header class="header">
+    
+
+    
 <!-- NavBar -->
 <div class="navbar">
 
 <img src="img/logo-trans.png" alt="Atölye15 logo" class="navbar__logo">
+
+      <!--NavBar for smaller screens-->
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link">ANA SAYFA</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">KAMPANYALAR</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">BİLET İŞLEMLERİ</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">YARDIM</a></li>
+            </ul>
+        </nav>
+    </div>
 
 <ul class="navbar__list">
     <li class="navbar__list-item"><a href="#">Ana sayfa</a></li>
