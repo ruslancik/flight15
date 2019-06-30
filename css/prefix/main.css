@@ -277,6 +277,9 @@ body {
   grid-row: 1 /2;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+  @media (max-width: 75em) {
+    .header {
+      padding: 2rem 6rem; } }
   @media (max-width: 56.25em) {
     .header {
       padding: 2rem 2rem; } }
@@ -321,6 +324,11 @@ body {
         text-decoration: none; }
   .header .ticket__steps {
     margin: 4rem 0; }
+    @media (max-width: 37.5em) {
+      .header .ticket__steps {
+        justify-self: center;
+        -ms-flex-item-align: center;
+        align-self: center; } }
     .header .ticket__steps .horiz {
       -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -356,6 +364,31 @@ body {
     justify-self: end;
     -ms-flex-item-align: end;
     align-self: end; }
+    @media (max-width: 37.5em) {
+      .header .total {
+        display: none; } }
+  .header .total2 {
+    display: none;
+    width: 10rem;
+    opacity: 0.5;
+    font-family: Lato, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ffffff;
+    justify-self: end;
+    -ms-flex-item-align: end;
+    align-self: end; }
+    @media (max-width: 37.5em) {
+      .header .total2 {
+        display: block;
+        justify-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        padding-bottom: 2rem; } }
   .header .flight {
     letter-spacing: 2px;
     margin: 0;
@@ -373,6 +406,19 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media (max-width: 37.5em) {
+      .header .flight {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 2rem 0; } }
+    @media (max-width: 37.5em) {
+      .header .flight__from-to {
+        padding: 2rem 0; } }
     .header .flight .plane {
       font-size: 2rem;
       color: #ffffff;
@@ -395,8 +441,16 @@ body {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
+      @media (max-width: 37.5em) {
+        .header .flight__info {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
     .header .flight__details {
-      height: 3rem;
       width: auto;
       font-size: 1.4rem;
       font-weight: 600;
@@ -405,6 +459,9 @@ body {
       line-height: 1.43;
       letter-spacing: 1px;
       color: #ffffff; }
+      @media (max-width: 37.5em) {
+        .header .flight__details {
+          padding: 3rem; } }
 
 /* Search flight section */
 .search-bar {
@@ -431,6 +488,10 @@ body {
     justify-content: space-between;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
+    @media (max-width: 37.5em) {
+      .search-bar__list {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
     .search-bar__list > * {
       cursor: pointer; }
     .search-bar__list > *:hover {
@@ -486,7 +547,7 @@ body {
       padding: 0 0 0 6rem; } }
   @media (max-width: 56.25em) {
     .departure {
-      padding: 0 0 0 2rem;
+      padding: 0 2rem 0 2rem;
       display: grid;
       grid-column: 1 / -1;
       grid-row: auto; } }
@@ -678,7 +739,7 @@ body {
       padding: 0 6rem 0 0; } }
   @media (max-width: 56.25em) {
     .arrival {
-      padding: 0 2rem 0 0;
+      padding: 0 2rem 0 2rem;
       display: grid;
       grid-column: 1 / -1;
       grid-row: auto; } }

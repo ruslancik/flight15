@@ -9,6 +9,9 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
+    @include respond(tab-land){
+        padding: 2rem 6rem;
+    }
     @include respond(tab-port){
         padding: 2rem 2rem;
     }
@@ -58,6 +61,11 @@
 
     .ticket__steps {
         margin: 4rem 0;
+
+        @include respond(phone){
+            justify-self: center;
+            align-self: center;
+        }
         .horiz {
             transform: rotate(-90deg);
             background-color: $white;
@@ -98,6 +106,33 @@
         color: $white;
         justify-self: end;
         align-self: end;
+
+        @include respond(phone){
+            display: none;
+        }
+    }
+
+    .total2 {
+        display: none;
+        width: 10rem;
+        opacity: 0.5;
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: $white;
+        justify-self: end;
+        align-self: end;
+
+        @include respond(phone){
+            display: block;
+            justify-self: center;
+            align-self: center;
+            padding-bottom: 2rem;
+        }
     }
     
     .flight {
@@ -109,6 +144,19 @@
         align-items: center;
         justify-content: space-between;
 
+        
+        @include respond(phone){
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        &__from-to {
+
+            @include respond(phone){
+                padding: 2rem 0;
+            }
+        }
      
       
         .plane {
@@ -131,10 +179,14 @@
             align-items: center;
             justify-content: space-between; 
 
+            @include respond(phone){
+                flex-direction: column;
+                justify-content: center;
+            }
+            
            }
         
         &__details {
-            height: 3rem;
             width: auto;
             font-size: 1.4rem;
             font-weight: 600;
@@ -143,6 +195,9 @@
             line-height: 1.43;
             letter-spacing: 1px;
             color: $white;
+            @include respond(phone){
+                padding: 3rem;
+            }
 
         }
         }
@@ -175,6 +230,10 @@
              flex-direction: row;
              justify-content: space-between;
              backface-visibility: hidden;
+             
+             @include respond(phone){
+                flex-wrap: wrap;
+            }
              
 
              & > * {
@@ -233,7 +292,7 @@
         padding : 0 0 0 6rem;
     }
     @include respond(tab-port){
-        padding: 0 0 0 2rem;
+        padding: 0 2rem 0 2rem;
         display:grid;
         grid-column: 1 / -1;
         grid-row: auto;
@@ -449,7 +508,7 @@
         padding : 0 6rem 0 0;
     }
     @include respond(tab-port){
-        padding: 0 2rem 0 0;
+        padding: 0 2rem 0 2rem;
         display:grid;
         grid-column: 1 / -1;
         grid-row: auto;
