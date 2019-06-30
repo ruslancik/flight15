@@ -1,3 +1,9 @@
+/*
+Mixins
+*/
+/*
+Variables
+*/
 *,
 *::before,
 *::after {
@@ -287,7 +293,7 @@ body {
   grid-template-rows: 1fr 1fr -webkit-max-content;
   grid-template-rows: 1fr 1fr max-content;
   grid-gap: 1rem 1rem;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 8rem 1rem;
   /*
     
     @media only screen  and (max-width: 992px){
@@ -477,7 +483,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr auto;
   grid-gap: 1rem 1rem;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 8rem 1rem;
   /*Arrival Title*/
   /*Arrival date bar*/
   /*Departure Card*/ }
@@ -659,4 +665,93 @@ body {
 .footer {
   background-color: grey;
   height: 300px;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  padding: 4rem 10rem 4rem 10rem;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+  .footer-logo__img {
+    padding: 0 0 2rem 0; }
+  .footer-logo__text {
+    opacity: 0.5;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #1a3163; }
+  .footer-pro__title {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #1a3163;
+    padding: 0 0 2rem 0; }
+  .footer-pro__list__item {
+    list-style: none;
+    padding: 1rem 0; }
+    .footer-pro__list__item a {
+      text-decoration: none;
+      opacity: 0.5;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #1a3163; }
+  .footer-about__title {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #1a3163;
+    padding: 0 0 2rem 0; }
+  .footer-about__list__item {
+    list-style: none;
+    padding: 1rem 0; }
+    .footer-about__list__item a {
+      text-decoration: none;
+      opacity: 0.5;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #1a3163; }
+  .footer-support__title {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #1a3163;
+    padding: 0 0 2rem 0; }
+  .footer-support__list__item {
+    list-style: none;
+    padding: 1rem 0; }
+    .footer-support__list__item a {
+      text-decoration: none;
+      opacity: 0.5;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #1a3163; }
