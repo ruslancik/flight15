@@ -16,6 +16,8 @@
         padding: 2rem 2rem;
     }
 
+  
+
     
     
 
@@ -54,6 +56,7 @@
             text-decoration: none;
             color: $white;
             font-size: 1.4rem;
+            
 
             a {
                 color: $white;
@@ -76,10 +79,10 @@
             background-color: $white;
             border: 1px solid $white;
             border-radius: 50%;
-            padding: 0.78rem;
-            font-size: 1.6rem;
+            padding: 0.7rem;
+            font-size: 1.8rem;
             margin-left: -1.93rem;
-            
+                     
         }
 
         span {
@@ -87,12 +90,20 @@
             font-size: 2.5rem;
             color: $light-blue-grey;
             opacity: 0.4;
+            vertical-align: middle;
+            @include respond(tab-port){
+                padding: 2rem 2rem;
+            }
         }
         .icon {
             padding: 1rem 1rem;
             border: 1px solid $light-blue-grey;
             border-radius: 50%;
             font-size: 1.6rem;
+
+            @include respond(phone){
+                font-size: 3rem;
+            }
             
         }
     }
@@ -232,9 +243,9 @@
         &__list{
             padding: 2rem 0;
             display: flex;
-             flex-direction: row;
-             justify-content: space-between;
-             backface-visibility: hidden;
+            flex-direction: row;
+            justify-content: space-between;
+            backface-visibility: hidden;
              
              @include respond(phone){
                 flex-direction: column;
@@ -261,17 +272,19 @@
             color: $dark-slate-blue;
             opacity: 0.5;
             width: auto;
-            height: 2rem;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            font-style: normal;
             font-stretch: normal;
             line-height: 1.43;
-            letter-spacing: normal;
             padding-right: 0 2rem;
+            font-family: $font-primary;
 
+            .fa-search {
+                padding-left: 10px;
+                vertical-align: center;
+            }
             @include respond(phone){
-                padding: 2rem 4rem;
+                padding: 1rem 0 2rem 0;
                 font-size: 2rem;
             }
                         
@@ -279,7 +292,12 @@
             &:last-child a {
                 background-color: $blue-grey;
                 color: $white;
-                
+
+                @include respond(phone){
+                    padding: 1.5rem 1.5rem;
+                    font-size: 2rem;
+                }
+             
                 
             }
 
