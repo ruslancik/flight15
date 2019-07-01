@@ -1,4 +1,6 @@
  /* Navigation scroll */
+
+
  $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -34,3 +36,26 @@
       }
     }
   });
+
+
+  // Waypoints for sticky nav
+
+var waypoints = document.querySelector('#js-section-WP');
+var navBar = document.querySelector("#js-nav");
+
+    var waypoint = new Waypoint({
+        element: waypoints,
+        handler: function(direction) {
+            if(direction == "down"){
+
+                navBar.classList.add('sticky');
+                navBar.classList.remove('navbar');
+            } else {
+                navBar.classList.remove('sticky');
+                navBar.classList.add('navbar');
+            }
+            
+        },
+        offset: '10px'
+    });
+

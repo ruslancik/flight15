@@ -269,4 +269,40 @@
   }   
 
 
- 
+
+  /* Sticky navbar */
+.sticky {
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+    padding: 0 10rem;
+
+ .navbar__list {
+    
+    margin: 2rem 0; }
+
+ .navbar__list li a:link,
+ .navbar__list li a:visited {
+     
+    padding: 0 0;
+    color: $dark-slate-blue;
+}
+
+
+}
+
+.sticky .navbar__logo { display: none; 
+
+}
+.sticky .logo-dark { display: block;
+
+    @include respond (phone){
+        display: none;
+    }
+}

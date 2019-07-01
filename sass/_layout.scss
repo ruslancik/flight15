@@ -21,8 +21,9 @@
     
     
 
-    .navbar {
-        
+    .navbar,
+    .sticky {
+
         &__list {
             display: block;  /*Activete and Deactivate navbar*/
             
@@ -30,6 +31,7 @@
                 display: none;
             }
         }
+
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -66,6 +68,9 @@
 
 
     }
+
+    .navbar .navbar__logo {display: block;}
+    .navbar .logo-dark {display: none;}
 
     .ticket__steps {
         margin: 4rem 0;
