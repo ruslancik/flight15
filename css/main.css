@@ -163,6 +163,48 @@ body {
   grid-template-rows: 60vh repeat(3, min-content);
   grid-template-columns: repeat(12, 1fr); }
 
+.btn-main {
+  width: 15.4rem;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  opacity: 0.9;
+  font-size: 1.4rem;
+  font-weight: 600;
+  vertical-align: middle; }
+  @media (max-width: 37.5em) {
+    .btn-main {
+      font-size: 2rem;
+      padding: 1.5rem 2rem; } }
+  .btn-main__yellow {
+    background-color: #fab555;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle; }
+    .btn-main__yellow i {
+      margin-left: 1rem;
+      vertical-align: middle; }
+
+.btn-hover {
+  overflow: hidden;
+  position: relative; }
+  .btn-hover:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10; }
+
+.btn-hover:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
+
 .btn {
   width: 15.4rem;
   padding: 1rem 2rem;
@@ -176,6 +218,12 @@ body {
     .btn {
       font-size: 2rem;
       padding: 1.5rem 2rem; } }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
   .btn-white {
     background-color: #d8e1eb;
     color: #1a3163; }
@@ -237,6 +285,76 @@ body {
 .selected {
   transform: scale(1.025);
   box-shadow: 0 2.6rem 4.2rem 3rem rgba(31, 56, 110, 0.18); }
+
+.n-btn {
+  cursor: pointer;
+  position: relative;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  vertical-align: middle; }
+  .n-btn:before, .n-btn:after {
+    box-sizing: border-box;
+    content: '';
+    height: 0;
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+    z-index: -1; }
+  .n-btn:before {
+    bottom: -10px;
+    border-bottom: 1px solid #d8e1eb;
+    border-left: 1px solid #d8e1eb;
+    left: -10px;
+    transform-origin: 0 100%; }
+  .n-btn:after {
+    border-right: 1px solid #d8e1eb;
+    border-top: 1px solid #d8e1eb;
+    right: -10px;
+    top: -10px;
+    transform-origin: 100% 0%; }
+  .n-btn:hover {
+    vertical-align: middle;
+    z-index: 9999; }
+    .n-btn:hover::before, .n-btn:hover::after {
+      width: calc(100% + 20px);
+      height: calc(100% + 20px); }
+
+.f-btn {
+  cursor: pointer;
+  position: relative;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  vertical-align: middle; }
+  .f-btn:before, .f-btn:after {
+    box-sizing: border-box;
+    content: '';
+    height: 0;
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+    z-index: -1; }
+  .f-btn:before {
+    bottom: -10px;
+    border-bottom: 1px solid #1a3163;
+    border-left: 1px solid #1a3163;
+    left: -10px;
+    transform-origin: 0 100%; }
+  .f-btn:after {
+    border-right: 1px solid #1a3163;
+    border-top: 1px solid #1a3163;
+    right: -10px;
+    top: -10px;
+    transform-origin: 100% 0%; }
+  .f-btn:hover {
+    vertical-align: middle;
+    z-index: 9999; }
+    .f-btn:hover::before, .f-btn:hover::after {
+      width: calc(100% + 20px);
+      height: calc(100% + 20px); }
 
 .header {
   width: auto;
@@ -300,6 +418,9 @@ body {
       padding: 0.7rem;
       font-size: 1.8rem;
       margin-left: -1.93rem; }
+      @media (max-width: 37.5em) {
+        .header .ticket__steps .horiz {
+          font-size: 2.8rem; } }
     .header .ticket__steps span {
       padding: 0 0 0 1rem;
       font-size: 2.5rem;
@@ -393,12 +514,13 @@ body {
       font-weight: 600;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.43;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       color: #ffffff; }
       @media (max-width: 37.5em) {
         .header .flight__details {
-          padding: 3rem; } }
+          padding: 2rem;
+          font-size: 1.8rem;
+          letter-spacing: 1px; } }
 
 /* Search flight section */
 .search-bar {
@@ -528,6 +650,7 @@ body {
       opacity: 0.25;
       font-size: 1.4rem; }
     .departure__date-bar .date-list .date-scroll__left {
+      cursor: pointer;
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
       display: inline-block;
@@ -538,6 +661,7 @@ body {
       vertical-align: baseline;
       padding: 3rem 0; }
     .departure__date-bar .date-list .date-scroll__right {
+      cursor: pointer;
       border-top-right-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
       display: inline-block;
@@ -689,6 +813,7 @@ body {
         opacity: 0.25;
         font-size: 1.4rem; }
       .arrival__date-bar .date-list .date-scroll__left {
+        cursor: pointer;
         border-top-left-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
         display: inline-block;
@@ -699,6 +824,7 @@ body {
         vertical-align: baseline;
         padding: 3rem 0; }
       .arrival__date-bar .date-list .date-scroll__right {
+        cursor: pointer;
         border-top-right-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
         display: inline-block;

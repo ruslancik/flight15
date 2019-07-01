@@ -82,7 +82,10 @@
             padding: 0.7rem;
             font-size: 1.8rem;
             margin-left: -1.93rem;
-                     
+
+               @include respond(phone){
+                font-size: 2.8rem;
+            }      
         }
 
         span {
@@ -208,11 +211,12 @@
             font-weight: 600;
             font-style: normal;
             font-stretch: normal;
-            line-height: 1.43;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             color: $white;
             @include respond(phone){
-                padding: 3rem;
+                padding: 2rem;
+                font-size: 1.8rem;
+                letter-spacing: 1px;
             }
 
         }
@@ -380,6 +384,8 @@
                 font-style: normal;
                 line-height: 1.5;
                 padding: 1rem;
+
+                
                
                 
             }
@@ -391,6 +397,8 @@
 
             .date {
                 display: block;
+
+                
             }
             
             .price {
@@ -402,6 +410,7 @@
             .date-scroll {
                 
              &__left {
+                cursor: pointer;
                 border-top-left-radius: 0.5rem;
                 border-bottom-left-radius: 0.5rem;
                 display: inline-block;
@@ -414,6 +423,7 @@
              }
 
              &__right {
+                 cursor: pointer;
                 border-top-right-radius: 0.5rem;
                 border-bottom-right-radius: 0.5rem;
                 display: inline-block;
@@ -617,6 +627,7 @@
             .date-scroll {
                 
              &__left {
+                cursor: pointer;
                 border-top-left-radius: 0.5rem;
                 border-bottom-left-radius: 0.5rem;
                 display: inline-block;
@@ -629,6 +640,7 @@
              }
 
              &__right {
+                cursor: pointer;
                 border-top-right-radius: 0.5rem;
                 border-bottom-right-radius: 0.5rem;
                 display: inline-block;

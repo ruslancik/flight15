@@ -1,3 +1,61 @@
+ // Main button hover and hover
+ .btn-main {
+    width: 15.4rem;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    opacity: 0.9;
+    font-size: 1.4rem;
+    font-weight: 600;
+    vertical-align: middle;
+
+    @include respond(phone){
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+    }
+
+    &__yellow {
+        background-color: $butterscotch;
+        color: $white;
+        text-align: center;
+        vertical-align: middle;
+
+        i { 
+            margin-left: 1rem;
+            vertical-align: middle;
+        }
+    }
+  }
+  .btn-hover {
+    overflow: hidden;
+    position: relative;
+  
+    &:after {
+      background: #fff;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+  }
+  
+  .btn-hover:hover {
+    
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+  }
+  
+
+// All another buttons and hover
 .btn {
     width: 15.4rem;
     padding: 1rem 2rem;
@@ -13,9 +71,16 @@
         padding: 1.5rem 2rem;
     }
 
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+          
+            &::after {
+              transform: scaleX(1.4) scaleY(1.6);
+              opacity: 0; 
+            }
+      }
     
-    
-
     &-white {
         background-color: $light-blue-grey;
         color: $dark-slate-blue;
@@ -40,6 +105,8 @@
     }
 }
 
+// Flight dots
+
 .dot {
     display: inline-block;
     content: ' ';
@@ -53,6 +120,7 @@
 
 }
 
+// Flight dots small
 .dot-sm {
     display: inline-block;
     content: '';
@@ -78,10 +146,13 @@
 }
 */
 
+
+// Rotate arrive plane
 .arrive {
     transform: rotate(-180deg);
 }
 
+// Flight companies image set up
 .anadolulogo,
 .pgslogo,
 .thylogo {
@@ -89,6 +160,7 @@
     width: auto;
 }
 
+// Selected Button
 .selected {
     transform: scale(1.025);
     box-shadow: 0 2.6rem 4.2rem 3rem rgba(31, 56, 110, 0.18);
@@ -96,10 +168,105 @@
 
 
 
+//Navigation Hover
+.n-btn {
+    cursor: pointer;
+    position: relative; 
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    vertical-align: middle;
+
+    &:before, 
+    &:after {
+      box-sizing: border-box;
+      content: '';
+      height: 0;
+      position: absolute;
+      transition: 0.3s;
+      width: 0;
+      z-index: -1;
+    }   
+
+    &:before {
+      bottom: -10px;
+      border-bottom: 1px solid $light-blue-grey;
+      border-left: 1px solid $light-blue-grey;
+      left: -10px;
+      transform-origin: 0 100%;
+    }     
+    
+    &:after {
+      border-right: 1px solid $light-blue-grey;
+      border-top: 1px solid $light-blue-grey;
+      right: -10px;
+      top: -10px;
+      transform-origin: 100% 0%;
+    } 
+
+    &:hover {
+      vertical-align: middle;
+      z-index: 9999;
+
+      &::before,
+      &::after {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+      }
+    }    
+  }   
 
 
+//Footer Hover
+
+  .f-btn {
+    cursor: pointer;
+    position: relative; 
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    vertical-align: middle;
+
+    &:before, 
+    &:after {
+      box-sizing: border-box;
+      content: '';
+      height: 0;
+      position: absolute;
+      transition: 0.3s;
+      width: 0;
+      z-index: -1;
+    }   
+
+    &:before {
+      bottom: -10px;
+      border-bottom: 1px solid $dark-slate-blue;
+      border-left: 1px solid $dark-slate-blue;
+      left: -10px;
+      transform-origin: 0 100%;
+    }     
+    
+    &:after {
+      border-right: 1px solid $dark-slate-blue;
+      border-top: 1px solid $dark-slate-blue;
+      right: -10px;
+      top: -10px;
+      transform-origin: 100% 0%;
+    } 
+
+    &:hover {
+      vertical-align: middle;
+      z-index: 9999;
+
+      &::before,
+      &::after {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+      }
+    }    
+  }   
 
 
-
-
-
+ 
