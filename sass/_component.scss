@@ -301,6 +301,9 @@
 
 }
 .sticky .logo-dark { display: block;
+    margin: -3rem;
+    padding: 0 3rem;
+    height: auto;
 
     @include respond (phone){
         display: none;
